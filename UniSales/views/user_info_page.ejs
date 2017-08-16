@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>UniSales</title>
+
+    <link rel="stylesheet" href="/css/user_info.css">
+
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="whole_container">
+        <div class="search_selection">
+            <h1> Past Items </h1>
+            <% for(var i=0; i<products.length; i++) {%>
+                 <div class="search_result" id=<%= products[i]._id %> >
+                     <img src="/img/fake_item.png" alt="item photo" />
+                     <h4> Product Name: <%= products[i].productname %></h4>
+                   <h4> Price: <%= products[i].price %></h4>
+                     <h4> Category: <%= products[i].category %></h4>
+                 </div>
+             <% } %>
+        </div>
+
+        <div class="user_info">
+            <img src="/img/fake_info_pic.jpg" alt="user info pic" />
+
+            <h4> User Name: <%= user.fullname %></h4>
+
+            <h4 id="user_email"><%= user.email %></h4>
+            <div class="comment_and_send_message_button">
+                <button type="submit" class="comment_button">Comment</button>
+                <button type="submit" class="send_message_button">message</button>
+            </div>
+
+            <div>
+            <form action="/ad_creation.html" >
+            <button type="submit" id="direct_to_ad_creation_button" class="send_message_button">Post New Ad</button>
+            </form>
+            <form action="/change_password.html" >
+            <button type="submit" id="direct_to_change_password_button" class="send_message_button">Change Password</button>
+            </form>
+            </div>
+
+
+            
+
+        </div>
+        <div class="comments">
+            
+            <h1> Comments </h1>
+            <div class="uploaded_comments">
+                <% for(var i=0; i<comments.length; i++) {%>
+                     <article class="single_comment">
+                         <h3><%= comments[i].title %> </h3>
+                         <p> <%= comments[i].message %><p>
+                   </article>
+                 <% } %>
+            </div>
+                    
+            <div class="add_comments_section">
+                <input id="user_info_comment_title" class="comment_title" type="text" placeholder="title of the comment">
+                <div>
+                    <textarea id="user_info_comment_detail" class="comment_detail"></textarea>
+                </div>
+                <button type="submit" id="post_comment_button" class="post_comment_button">Post Comment</button>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer"></div>
+    <!-- The Jquery scripts -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+	
+	<script src="http://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css" />
+    <script src="/jscript/user_info_page.js"></script>
+</body>
+</html>
+

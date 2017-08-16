@@ -1,0 +1,25 @@
+{
+  "name": "Team43-UniSales",
+  "version": "0.0.1",
+  "description": "A app for UofT students to sell items to other students",
+  "main": "unisales_server.js",
+  "scripts": {
+    "start": "node unisales_server.js"
+  },
+  "author": "Team 43",
+  "license": "GPLv3",
+  "dependencies": {
+    "bcrypt": "^1.0.2",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.6",
+    "express": "^4.14.0",
+    "express-session": "^1.15.0",
+    "express-validator": "latest",
+    "mongoose": "^4.8.6",
+    "mongoose-auto-increment": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}

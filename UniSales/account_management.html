@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>UniSales</title>
+
+	<link rel="stylesheet" href="css/account_management.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+	<div id="header"></div>
+
+	<!-- Profile picture section -->
+	<section class=pic_section>
+		<h1>Account Management</h1>
+		<p> Hello, User </p>
+		<img class="user_pic" src="img/fake_info_pic.jpg" alt="user info pic" /><br>
+		<form>
+  			<input type="file" name="pic" accept="image/*">
+  			<input type="Submit" value="Upload Image">
+		</form>
+	</section>
+
+	<div class="column">
+	<!-- Wishlist section -->
+	<div class="wishlist">
+		<button class="expand">Your Wishlist</button>
+		<div class="panel">
+			<div class="wishlist_item">
+        		<img src="img/fake_item.png" alt="item photo" />
+        	</div>
+        	<div class="wishlist_item">
+        		<img src="img/fake_item.png" alt="item photo" />
+        	</div>
+        	<div class="wishlist_item">
+        		<img src="img/fake_item.png" alt="item photo" />
+        	</div>
+        </div>
+	</div>
+
+	<!-- Listings section -->
+	<div class="listings">
+		<button class="expand">Your Listings</button>
+		<div class="panel">
+			<div class="listings_item">
+        		<img src="img/fake_item.png" alt="item photo" />
+        	</div>
+        	<div class="listings_item">
+        		<img src="img/fake_item.png" alt="item photo" />
+        	</div>
+        	<div class="listings_item">
+        		<img src="img/fake_item.png" alt="item photo" />
+        	</div>
+        </div>
+	</div>
+
+	<!-- Account information section -->
+	<section class="account_info">
+		<h2>Your account information:</h2>
+		<p>
+			Name: <input type="text" name="name" value="John Smith" readonly>
+			<a href="#" title="Edit"><i class="material-icons">edit</i></a>
+		</p>
+		<p>
+			Email: <input type="email" name="name" value="xxxx@xxxx.com" readonly>
+			<a href="#" title="Edit"><i class="material-icons">edit</i></a>
+		</p>
+		<p>
+			Contact number: <input type="email" name="name" value="(000) 000-0000" readonly>
+			<a href="#" title="Edit"><i class="material-icons">edit</i></a>
+		</p>
+		<p>
+			Password: <input type="email" name="name" value="************" readonly>
+			<a href="#" title="Edit"><i class="material-icons">edit</i></a>
+		</p>
+	</section>
+	</div>
+
+	<div id="footer"></div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+	
+	<script src="http://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css" />
+
+    <script src="jscript/account_management.js"></script>
+
+</body>
+</html>

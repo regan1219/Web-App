@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>UniSales</title>
+    <link rel="stylesheet" href="css/ad_creation.css">
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="whole_container">
+   <!-- The post and show product -->  
+      <br>
+      <br>
+      <br>
+      <form action="/login" method="get" >
+			<button type='submit'>Back to user info page</button>
+      </form>
+      <br>
+      <br>
+      <br>
+      <section id="product-form", class = "product">
+      <p>Enter a product name</p>
+      <input type="text" name="product-name" id="product-name" />
+      <p>Enter a price</p>
+      <input type="number" name="price" id="price" />
+      <p>Enter a category</p>
+      <input type="text" name="category" id="category" />
+      <p>Enter a description</p>
+      <input type="text" name="description" id="description" />
+      <input type="button" name="post-product" id="post-product" value="Create" />
+  
+      <div id="wrapper">
+        <div id="menu">
+            <p class="welcome">Products: <b><span class="name"></span></b></p>
+            <input type="button" class="logout" name="getall" id="getall" value="Show all" />
+            <input type="button" class="logout" name="clear" id="clear" value="Clear" />
+            <div style="clear:both"></div>
+        </div>
+      <div id="postbox" class="boxes"></div>
+     
+      </div>
+      </section> 
+     <!-- The post and show product -->
+      <br>
+      <br>
+      <br>
+       <!-- Update product -->  
+
+      <section id="product-form2", class = "product">
+      <p>Enter the product id you want to update</p>
+      <input type="number" name="pid" id="pid" />
+      <p>Enter a product name</p>
+      <input type="text" name="product-name2" id="product-name2" />
+      <p>Enter a price</p>
+      <input type="number" name="price2" id="price2" />
+      <p>Enter a category</p>
+      <input type="text" name="category2" id="category2" />
+      <p>Enter a description</p>
+      <input type="text" name="description2" id="description2" />
+      <input type="button" name="put-product" id="put-product" value="Update" />
+  
+      <div id="wrapper2">
+        <div id="menu2">
+            <p class="welcome">Products: <b><span class="name"></span></b></p>
+            <input type="button" class="logout" name="clear2" id="clear2" value="Clear" />
+            <div style="clear:both"></div>
+        </div>
+      <div id="putbox" class="boxes"></div>
+     
+      </div>
+      </section> 
+     <!-- Update product -->
+      <br>
+      <br>
+      <br>
+      <!-- Delete product -->  
+
+      <section id="product-form3", class = "product">
+      <p>Enter the product id you want to delete</p>
+      <input type="number" name="pid2" id="pid2" />
+      <input type="button" name="delete-product" id="delete-product" value="Delete" />
+  
+      <div id="wrapper3">
+        <div id="menu3">
+            <p class="welcome">Products: <b><span class="name"></span></b></p>
+            <input type="button" class="logout" name="clear3" id="clear3" value="Clear" />
+            <div style="clear:both"></div>
+        </div>
+      <div id="deletebox"></div>
+     
+      </div>
+      </section> 
+     <!-- Delete product -->
+      <br>
+      <br>
+      <br>
+
+    </div>
+    <div id="footer"></div>
+    <!-- The Jquery scripts -->
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+	
+	<script src="http://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css" />
+    <script src="jscript/ad_creation.js"></script>
+</body>
+</html>
+

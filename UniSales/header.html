@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>UniSales</title>
+
+	<link rel="stylesheet" href="/css/header.css">
+	<link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+	
+	<script src="http://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
+
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css" />
+
+	<script src="/jscript/header.js"></script>
+</head>
+
+<body>
+<header id="main-header">
+	<div class="header-container">
+		
+		<!-- Logo -->
+		<h1><a href="/search_result_page.html">Uni$ales</a></h1>
+		
+		<!-- Search bar -->
+		<!--<form>
+			<input type="text" id="search-bar" name="search" placeholder="Search...">
+			<input type="image" id="search-button" src="img/search.png" title="Search" alt="search">
+		</form>-->
+		<ul>
+			<li><a id="header_search_button" href="">Search</a></li>
+		</ul>		
+		<!-- Log in and sign up -->
+		<ul>
+			<li><a href="/login">Log in</a></li>
+			<li><a href="/signup.html">Sign up</a></li>
+			<li><a href="/logout">Log Out</a></li>
+		</ul>
+	
+</header>
+
+	</div>
+        <div id="dialog-form-search-products" title="Search Products" hidden="hidden">
+
+            <form class="search_input">
+                <fieldset>
+                    <label for="name">Price</label>
+                    <input type="text" name="header_price" id="header_price" value="" >
+
+                    <label for="name">Category</label>
+                    <input type="text" name="header_category" id="header_category" value="" >
+
+                    <label for="name">Name</label>
+                    <input type="text" name="header_name" id="header_name" value="" >
+                </fieldset>
+            </form>
+            <button id="header_product_search">Search</button>
+        </div>
+</body>
+</html>

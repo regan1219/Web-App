@@ -1,0 +1,144 @@
+.pic_section {align-items: center;}
+
+.product_title {
+    width: 40%;
+    text-align: left ;
+    padding-right: 50px}
+
+.product_pic {
+    width: 70%;
+    align-self: center;
+    margin-top: 15px;
+}
+
+.thumbnail {
+    width: 4em;
+    align-self: center;
+}
+
+.thumbnail_pics {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    width: 95%;
+}
+
+.other_items {
+    align-items: center;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.other_thumbnail {
+    width: 2em;
+    padding: 5px;
+}
+
+figure {
+    clear: none;
+    display: inline-block;
+}
+
+.comment_form {
+    margin-top: 40px;
+}
+
+#bookmark_star {height: 1em;}
+
+
+
+#interest {
+    width: 40%;
+    text-align: right;
+    padding-left: 50px;
+    padding-top: 40px}
+
+#price {font-weight: bold;}
+
+.poster_link {
+    font-weight: bold;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.product_info h2 {
+    clear: both;
+    margin-bottom: -5px;}
+
+
+.listings i {display: none;}
+
+.product_descption h3 {
+    clear: both;}
+
+.comment_title {
+    font-weight: bold;
+    font-size: 1em;
+    padding-bottom: 0px;
+    margin-bottom: 0px;}
+
+.user_comment {
+    padding: 0px;
+    margin: 0px;
+    width: 50%;
+    margin-top: 30px;}
+
+.date {
+    text-align: right;
+    padding-left: 30px}
+
+h3 {
+    margin-bottom: 0px;
+    padding-bottom: 0px}
+
+@media all and (min-width: 768px) {
+    .pic_section {
+        text-align: left;
+        padding-left: 10px;
+        float: left;
+        width: 20%;
+    }
+
+    .user_pic {width: 95%}
+
+    .column {
+        float: right;
+        width: 75%;
+    }
+
+    .expand {display: none;}
+
+    .wishlist{text-align: left;}
+
+    .wishlist h2 {margin-left: 25px;}
+
+    .wishlist_item {width: 20%;}
+
+    .wishlist i {
+        display: inline-block;
+        margin-top: 90px;
+        font-size: 50px;
+    }
+
+    .listings{text-align: left;}
+
+    .listings h2 {margin-left: 25px;}
+
+    .listings_item {width: 20%;}
+
+    .listings i{
+        display: inline-block;
+        margin-top: 90px;
+        font-size: 50px;
+    }
+
+    .account_info {
+        text-align: left;
+        margin-left: 25px;
+    }
+
+    #footer{clear: both;}
+}

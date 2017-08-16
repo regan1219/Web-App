@@ -1,0 +1,43 @@
+
+.loginhead {
+	
+	text-align :center;
+	
+}
+.login {
+
+	min-width: 200px;
+	width: 30%;
+	margin-left: 32%;
+	padding-bottom: 95px;
+	
+
+}
+
+.login input, .login button, .login select, .login a{
+	float: left;
+	clear: both;
+	margin: 10px;
+}
+
+.login input, .login select {
+	width: 70%;
+	margin-left: 15%;
+}
+
+.login button, .login a {
+	width: 50%;
+	margin-left: 25%;
+}
+
+#register_form {
+	display: none;
+}
+
+/** Smartphone **/
+@media (max-width: 320px) {
+	.login {
+		width: 70%;
+		margin-left: 15%;
+	}
+}

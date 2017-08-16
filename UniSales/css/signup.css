@@ -1,0 +1,89 @@
+/* Header */
+header {
+	box-sizing: border-box;
+	background-color:#aaaaaa;
+	padding: 25px 40px;
+	height: 100px;
+	text-align: center;
+}
+
+header h1 {
+	float: none;
+	font-family: 'Sigmar One';
+	line-height: 30px;
+	margin: 0;
+	text-align: center;
+}
+
+header h1 a{
+	text-decoration: none;
+	color: black;
+}
+
+header h2 {
+	float: none;
+	margin: 0;
+	padding-top: 5px;
+	font: 16px Arial;
+}
+
+/* Sign up section*/
+#sign-up {
+	text-align: center;
+	font: 14px Arial;
+}
+
+/* Sign up with Facebook */
+#sign-up .icon {
+	height: 45px;
+	padding-bottom: 20px;
+}
+
+#sign-up #or {
+	font-size: 20px;
+}
+
+/* Sign up with email */
+#sign-up #container {
+	width: 300px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+#sign-up #container .typing {
+	width: 100%;
+	margin: 5px 0 10px 0;
+	padding: 3px;
+	border-radius: 5px;
+	border: 2px solid #aaaaaa;
+}
+
+#sign-up .button {
+	font: 14px Arial;
+	line-height: 30px;
+	width: 130px;
+	margin-top: 10px;
+	background-color: #e5e5e5;
+	border: 2px solid #a7a7a7;
+	border-radius: 5px;
+}
+
+/* Responsive */
+@media all and (min-width: 768px) {
+	header h1 {
+		float: left;
+		line-height: 40px;
+	}
+
+	header #header-container {
+		width: 100%;
+	}
+	header h2 {
+		font: 30px Arial;
+	}
+}
+
+body {
+	margin:0;
+	padding:0;
+}

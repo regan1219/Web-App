@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>UniSales</title>
+        <link rel="stylesheet" href="css/search_result.css">
+    </head>
+    <body>
+        <div id="header"></div>
+
+        <div class="whole_container">
+            <section class="search_selection">
+                <h1> Advanced Search </h1>
+                <div class="option_price_range">
+                    <!--<h3> Price Range </h3>
+                    <input class="price_range" type="text" placeholder="From">
+                    <input class="price_range" type="text" placeholder="To">-->
+                    <h3> Price </h3>
+                    <input id="search_result_page_price" class="price_range" type="text" placeholder="Price">
+                </div>
+
+                <div class="option_1">
+                    <h3> Category </h3>
+
+                    <input id="search_result_page_category" class="price_range" type="text" placeholder="Category">
+                </div>
+
+                <div class="option_2">
+                    <h3> Product Name </h3>
+                    <input id="search_result_page_product_name" class="price_range" type="text" placeholder="Product name">
+                </div>
+
+                <div class="search_button_class">
+                        <button id="search_result_page_search_button" type="submit" class="search_button">Search</button>
+                </div>
+            </section>
+
+            <div id="search_box" class="search_box"></div>
+        </div>
+        <div id="footer"></div>
+        <!-- The Jquery scripts -->
+        <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+        
+        <script src="http://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css" />
+        <script src="jscript/search_result.js"></script>
+    </body>
+</html>
+

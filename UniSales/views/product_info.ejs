@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>UniSales - Product Page</title>
+
+	<link rel="stylesheet" href="/css/product_info.css">
+	<link rel="stylesheet" href="/css/search_result.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body>
+
+	<div id="header"></div>
+
+	<!-- Product picture section -->
+	<section class=pic_section>
+		<p id="Category">Category: <%= product.category%></p>
+		<img class="product_pic" src="/img/fake_item.png" alt="main product pic" />
+
+		<div class="thumbnail_pics">
+			<span><a href="#">
+				<img class="thumbnail" src="/img/fake_item.png" alt="alternative product pic" />
+			</a></span>
+			<span><a href="#">
+				<img class="thumbnail" src="/img/fake_item.png" alt="alternative product pic" />
+			</a></span>
+			<span><a href="#">
+				<img class="thumbnail" src="/img/fake_item.png" alt="alternative product pic" />
+			</a></span>
+		</div>
+	</section>
+
+	<div class="column">
+	<!-- Product description section -->
+	<section class="product_info">
+		<table><tr>
+		<td class="product_title">
+			<h2><%= product.productname %></h2>
+			<p id="price">$<%= product.price %></p>
+			<p>
+				Posted by: 
+				<a class="poster_link" href="/user/<%= user._id %>"><%= user.firstname %> <%= user.lastname %></a>
+			</p>
+		</td>
+
+		<td id="interest">
+			<p><a href="mailto:<%= user.email %>">Contact Seller</a></p>
+			<p><a href="#">Add to Bookmark <img id="bookmark_star" src="/img/star.png" alt="Add to Bookmark" /></a></p>
+		</td>
+		</tr></table>
+	</section>
+
+	<!-- Product description section -->
+	<section class="product_description">
+		<h3>Desctiption:</h3>
+		<p>
+			 <%= product.description %>
+		</p>
+	</section>
+
+	</div>
+
+	<div id="footer"></div>
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+	<script src="/jscript/main_page.js"></script>
+
+</body>
+</html>

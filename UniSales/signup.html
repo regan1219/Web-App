@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Sign up for UniSales</title>
+
+	<link rel="stylesheet" href="css/signup.css">
+	<link href="https://fonts.googleapis.com/css?family=Sigmar+One" rel="stylesheet">
+
+</head>
+
+<body>
+	<header>
+		<!-- Logo -->
+		<h1><a href="search_result_page.html">Uni$ales</a></h1>
+
+		<!-- Heading -->
+		<div id="header-container">
+			<h2>Create your new UniSales account</h2>
+		</div>
+	</header>
+
+	<!-- Sign up section -->
+	<section id="sign-up">
+
+		<!-- Sign up with Facebook -->
+		<h4>Sign up with Facebook:</h4>
+		<a href="#" title="Sign up with Facebook:"><img class="icon" src="img/facebook.png" alt="facebook"></a>
+		<p id="or">OR</p><br>
+		<h4>Sign up with your university email:</h4>
+
+		<!-- Email sign up form -->
+			<div id="container">
+				<label>University email address:</label>
+				<input id="email_address" class="typing" type="<strong>email</strong>" name="email">
+				<label>First name:</label>
+				<input id="first_name" class="typing" type="text" name="firstname">
+				<label>Last name:</label>
+				<input id="last_name" class="typing" type="text" name="lastname">
+				<label>Password:</label>
+				<input id="password" class="typing" type="password" name="password">
+				<label>Confirm Password:</label>
+				<input id="confirm_password" class="typing" type="password" name="confirm">
+				<div id="status"></div>
+			</div>
+		
+		<input class="button" id = "create_account_button" type="button" value="Create Account">
+	
+	
+		
+	</section>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+        
+        <script src="http://code.jquery.com/ui/1.12.0-rc.2/jquery-ui.min.js"></script>
+
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0-rc.2/themes/smoothness/jquery-ui.css" />
+	<script src="jscript/signup.js"></script>
+
+</body>
+</html>

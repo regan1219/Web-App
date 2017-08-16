@@ -1,0 +1,38 @@
+#main-footer {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 10px 50px;
+	margin-top: 100px;
+	background-color: #aaaaaa;
+	text-align: center;
+    position: relative;
+}
+
+#main-footer h2 {
+	font-family: 'Sigmar One';
+}
+
+
+#main-footer #footer-links a {
+	text-decoration: none;
+	color: black;
+	opacity: 0.6;
+}
+
+#main-footer #footer-links a:hover {
+	opacity: 1;
+}
+
+#main-footer .icon {
+	height: 45px;
+	padding-left: 10px;
+}
+
+@media all and (min-width: 1600px) {
+    #main-footer
+    {
+        margin-top: 300px;
+    }
+
+
+}

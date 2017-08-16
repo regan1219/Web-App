@@ -1,0 +1,82 @@
+
+.search_box
+{
+    margin-top:10px;
+    width: auto;
+    height:auto;
+    position: relative;
+    text-align: center; 
+    border:1px solid #000;
+}
+
+.search_selection
+{
+    margin-top:10px;
+    display:block;
+    width: auto;
+    height:auto;
+    position: relative;
+    text-align: center; 
+
+    border:1px solid #000;
+}
+.search_result
+{
+    font-size: 16px; /*reset font size*/
+    display: block;
+    vertical-align: top;
+    width: 100%;
+    max-width:180px;
+    min-height:200px;
+    margin-top:20px;
+    position:relative;
+    margin-right:20px;
+    margin-left:60px;
+    border: 1px solid red;
+    margin-bottom:20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+.search_result img
+{
+    max-height:50%; 
+    max-width:50%;
+    position:relative;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+    text-align: center;
+}
+
+.price_search
+{
+    display:block;
+}
+
+
+@media all and (min-width: 333px) {
+    .search_result {
+        display: inline-block;
+        text-align: center; 
+    }
+}
+
+@media all and (min-width: 1024px) {
+    .whole_container
+    {
+        display:inline-block;
+    }
+    .search_selection
+    {
+        margin-left:2%;
+        float: left;
+        margin-right:3%;
+    }
+    .search_box
+    {
+        width:60%;
+        float: left;
+    }
+}
